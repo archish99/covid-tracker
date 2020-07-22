@@ -122,9 +122,17 @@ const updateNumbers = async () => {
   updateCounterRecover();
 };
 
+const updateMapHeight = () => {
+  const headerHeight = document.querySelector(".header").clientHeight;
+  const map = document.querySelector(".map");
+  const mapHeight = window.innerHeight - headerHeight;
+  map.style.height = `${mapHeight}px`;
+};
+
 const runApp = async () => {
   updateNumbers();
   displayMarker();
+  updateMapHeight();
 };
 
 runApp();
