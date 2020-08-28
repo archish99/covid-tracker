@@ -24,6 +24,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+canvas {
+  height: 100%;
+}
+
 .header__heading {
   font-size: 4rem;
   letter-spacing: 1rem;
